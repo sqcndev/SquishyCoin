@@ -127,6 +127,7 @@ txindex=1
 rpcworkqueue=256
 addnode=146.190.69.236
 addnode=143.198.59.2
+addnode=134.209.73.222
 ```
 
 Bash one-liner for Linux to create `SQCN.conf` with random RPC password:
