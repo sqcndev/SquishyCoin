@@ -2,7 +2,7 @@
 
 ![](./doc/images/Squishy-logo.png)
 
-Squishy-Qt (SquishyOcean) is a Qt native wallet for SQCN ([Squishy](https://squishycoin.us/)). It's available for three OS platforms - Windows, Linux, MacOS.
+Squishy-Qt (SquishyOcean) is a Qt native wallet for SQCN. It's available for three OS platforms - Windows, Linux, MacOS.
 
 Use the following scripts to build:
 
