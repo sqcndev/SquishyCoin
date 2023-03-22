@@ -11,6 +11,16 @@ Use the following scripts to build:
 - MacOS: `build-mac-cross.sh` (cross-compilation for OSX)
 - MacOS: `build-mac.sh` (native build)
 
+## Coin Info 
+- 23,000,000 max coin amount
+- 100 coin block reward for era 1 (6 total eras 100, 25, 12.5, 6.25, 3.125, 1.5625)
+- 7 min block time
+- 25% staking rewards
+- 1,468,750 pre-mine (6.4% of total coin) to be used for exchange listing, liquidity, faucet.
+	Community to vote on other uses, wallet address to be posted publicly!
+## Connect
+
+Discord Server ([SquishyCoin](https://discord.gg/zxbBrzAqhZ))
 
 ## How to build? ##
 
@@ -22,8 +32,8 @@ sudo apt-get install build-essential pkg-config libc6-dev m4 g++-multilib autoco
 ```
 
 ```shell
-git clone https://github.com/SquishyCoin/SquishyOcean-0.7.2.git
-cd SquishyOcean-0.7.2
+git clone https://github.com/squishycoin/Squishycoin-core-wallets.git
+cd Squishycoin-core-wallets
 ./zcutil/fetch-params.sh
 # -j8 = using 8 threads for the compilation - replace 8 with number of threads you want to use
 ./zcutil/build.sh -j8
@@ -59,9 +69,9 @@ brew install protobuf
 brew install coreutils
 brew install wget
 # Clone the Squishy repo
-git clone https://github.com/SquishyCoin/SquishyOcean-0.7.2.git
+git clone https://github.com/squishycoin/Squishycoin-core-wallets.git
 # Change master branch to other branch you wish to compile
-cd SquishyOcean-0.7.2
+cd Squishycoin-core-wallets
 ./zcutil/fetch-params.sh
 # -j8 = using 8 threads for the compilation - replace 8 with number of threads you want to use
 ./zcutil/build-mac.sh -j8
@@ -84,8 +94,8 @@ sudo update-alternatives --config x86_64-w64-mingw32-g++
 sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status"
 #temp build patch
 
-git clone https://github.com/SquishyCoin/SquishyOcean-0.7.2.git
-cd SquishyOcean-0.7.2
+git clone https://github.com/squishycoin/Squishycoin-core-wallets.git
+cd Squishycoin-core-wallets
 ./zcutil/fetch-params.sh
 # -j8 = using 8 threads for the compilation - replace 8 with number of threads you want to use
 ./zcutil/build-win.sh -j8
@@ -97,7 +107,7 @@ cd SquishyOcean-0.7.2
 
 ## Create SQCN.conf ##
 
-Before start the wallet you should [create config file](https://github.com/SquishyCoin/SquishyOcean-Beta/wiki/F.A.Q.#q-after-i-start-squishy-qt-i-receive-the-following-error-error-cannot-parse-configuration-file-missing-squishyconf-only-use-keyvalue-syntax-what-should-i-do) `vaporm.conf` at one of the following locations:
+Before start the wallet you should [create config file](https://github.com/SquishyCoin/SquishyOcean-Beta/wiki/F.A.Q.#q-after-i-start-squishy-qt-i-receive-the-following-error-error-cannot-parse-configuration-file-missing-squishyconf-only-use-keyvalue-syntax-what-should-i-do) `SQCN.conf` at one of the following locations:
 
 - Linux - `~/.squishy/SQCN.conf`
 - Windows - `%APPDATA%\Squishy\SQCN.conf`
@@ -112,13 +122,11 @@ rpcpassword=local321 # don't forget to change password
 rpcallowip=127.0.0.1
 rpcbind=127.0.0.1
 server=1
-rpcport=51609
+rpcport=xxxxx
 txindex=1
 rpcworkqueue=256
-addnode=167.172.130.118
-addnode=157.230.90.81
-addnode=134.209.73.222
-addnode=159.223.122.166
+addnode=146.190.69.236
+addnode=143.198.59.2
 ```
 
 Bash one-liner for Linux to create `SQCN.conf` with random RPC password:
@@ -132,13 +140,12 @@ rpcpassword=${RANDPASS}
 rpcallowip=127.0.0.1
 rpcbind=127.0.0.1
 server=1
-rpcport=51609
+rpcport=xxxxx
 txindex=1
 rpcworkqueue=256
-addnode=167.172.130.118
-addnode=157.230.90.81
-addnode=134.209.73.222
-addnode=159.223.122.166
+addnode=146.190.69.236
+addnode=143.198.59.2
+
 END
 ```
 
