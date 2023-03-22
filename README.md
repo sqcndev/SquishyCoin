@@ -32,7 +32,7 @@ sudo apt-get install build-essential pkg-config libc6-dev m4 g++-multilib autoco
 ```
 
 ```shell
-git clone https://github.com/squishycoin/Squishycoin-core-wallets.git
+git clone https://github.com/sqcndev/SquishyCoin.git
 cd Squishycoin-core-wallets
 ./zcutil/fetch-params.sh
 # -j8 = using 8 threads for the compilation - replace 8 with number of threads you want to use
@@ -69,7 +69,7 @@ brew install protobuf
 brew install coreutils
 brew install wget
 # Clone the Squishy repo
-git clone https://github.com/squishycoin/Squishycoin-core-wallets.git
+git clone https://github.com/sqcndev/SquishyCoin.git
 # Change master branch to other branch you wish to compile
 cd Squishycoin-core-wallets
 ./zcutil/fetch-params.sh
@@ -94,7 +94,7 @@ sudo update-alternatives --config x86_64-w64-mingw32-g++
 sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status"
 #temp build patch
 
-git clone https://github.com/squishycoin/Squishycoin-core-wallets.git
+git clone https://github.com/sqcndev/SquishyCoin.git
 cd Squishycoin-core-wallets
 ./zcutil/fetch-params.sh
 # -j8 = using 8 threads for the compilation - replace 8 with number of threads you want to use
@@ -107,7 +107,7 @@ cd Squishycoin-core-wallets
 
 ## Create SQCN.conf ##
 
-Before start the wallet you should [create config file](https://github.com/SquishyCoin/SquishyOcean-Beta/wiki/F.A.Q.#q-after-i-start-squishy-qt-i-receive-the-following-error-error-cannot-parse-configuration-file-missing-squishyconf-only-use-keyvalue-syntax-what-should-i-do) `SQCN.conf` at one of the following locations:
+Before start the wallet you should [create config file](https://github.com/sqcndev/SquishyCoin.git/wiki/F.A.Q.#q-after-i-start-squishy-qt-i-receive-the-following-error-error-cannot-parse-configuration-file-missing-squishyconf-only-use-keyvalue-syntax-what-should-i-do) `SQCN.conf` at one of the following locations:
 
 - Linux - `~/.squishy/SQCN.conf`
 - Windows - `%APPDATA%\Squishy\SQCN.conf`
